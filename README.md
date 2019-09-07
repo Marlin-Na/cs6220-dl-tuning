@@ -12,12 +12,14 @@ mkdir raw_data/train2000_resize/cat
 mkdir raw_data/train2000_resize/dog
 mkdir raw_data/test40_resize
 mkdir raw_data/test400_resize
+mkdir raw_data/test_outlier_resize
 python resize_img.py --dim 50 --indir raw_data/train200/cat  --outdir raw_data/train200_resize/cat
 python resize_img.py --dim 50 --indir raw_data/train200/dog  --outdir raw_data/train200_resize/dog
 python resize_img.py --dim 50 --indir raw_data/train2000/cat --outdir raw_data/train2000_resize/cat
 python resize_img.py --dim 50 --indir raw_data/train2000/dog --outdir raw_data/train2000_resize/dog
 python resize_img.py --dim 50 --indir raw_data/test40        --outdir raw_data/test40_resize
 python resize_img.py --dim 50 --indir raw_data/test400       --outdir raw_data/test400_resize
+python resize_img.py --dim 50 --indir raw_data/test_outlier  --outdir raw_data/test_outlier_resize
 ```
 
 ## Training
