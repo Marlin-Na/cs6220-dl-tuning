@@ -31,3 +31,5 @@ python retrain.py --image_dir=raw_data/train200/ --bottleneck_dir=bottleneck/ --
 ## Reference
 
 - https://github.com/tensorflow/hub/tree/master/examples/image_retraining
+- https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/label_image
+
