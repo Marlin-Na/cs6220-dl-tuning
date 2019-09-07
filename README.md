@@ -28,6 +28,16 @@ python resize_img.py --dim 50 --indir raw_data/test_outlier  --outdir raw_data/t
 python retrain.py --image_dir=raw_data/train200/ --bottleneck_dir=bottleneck/ --how_many_training_steps=500 --output_graph=trained_model/retrained_graph.pb --output_labels=trained_model/retrained_labels.txt --summaries_dir=summaries
 ```
 
+## Testing
+
+```
+python label_image.py \
+--graph=trained_model/retrained_graph.pb --labels=trained_model/retrained_labels.txt \
+--input_layer=Placeholder \
+--output_layer=final_result \
+--image=raw_data/test40/cat.5000.jpg 2> /dev/null
+```
+
 ## Reference
 
 - https://github.com/tensorflow/hub/tree/master/examples/image_retraining
