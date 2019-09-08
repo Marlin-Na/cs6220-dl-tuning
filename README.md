@@ -26,6 +26,12 @@ both the model and the log.
 `test_outlier` will run the four classifier on the ten animated cat/dog images in `raw_data`
 and save the results to the corresponding model folder.
 
+Tensorboard can be used visualize the training log, for example:
+
+```
+python -m tensorboard.main --logdir m_train_200/summaries
+```
+
 The `retrain.py` and `label_image.py` may also be used independently. Sample usage:
 
 ```
