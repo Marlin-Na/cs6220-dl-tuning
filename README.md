@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 `raw_data` folder contains eight different datasets with varying volume and resolution.
 
-`run_all.sh` will train the network model with the four training datasets and test them
+`run_all.sh` will retrain the Inception V3 model with the four training datasets and test them
 with the corresponding test datasets. It will create the following folders which contains
 both the model and the log.
 
